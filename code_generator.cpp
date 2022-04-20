@@ -5,6 +5,16 @@ int main(){
     //将输出保存到code.cpp文件中
     freopen("code.cpp", "w", stdout);
 
+    //开始整活
+    printf("#include <iostream> \n");
+    printf("using namespace std; \n");
+    printf("int main() \n");
+    printf("{ \n");
+    printf("    cout << \"请给出一个不多于5位的正整数：\"; \n");
+    printf("    int x; \n");
+    printf("    cin >> x; \n\n");
+    printf("    switch (x){ \n");
+
     for(int i=1;i<=99999;++i){
         printf("    case %d:\n",i);
         if(i<10){
@@ -48,6 +58,9 @@ int main(){
             printf("        break;\n");
         }
     }
+
+    printf("\n    }");
+    printf("\n}");
 
     return 0;
 }
